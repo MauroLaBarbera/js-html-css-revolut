@@ -27,13 +27,14 @@ body {
 /* HEADER */
 .app-header {
     margin: 0 auto;
-    padding: 10px;
+    padding: 30px;
 }
 
 .top-action-list{
     display: flex;
     justify-content: space-between;
-    align-content: center;
+    align-items: center;
+    
 }
 
 .logo {
@@ -51,7 +52,7 @@ body {
 .left > li a,
 .right > li a{
     display: inline-block;
-    margin: 35px 25px;
+    margin: 15px 25px;
     text-decoration: none;
     color: #888;
 }
@@ -63,4 +64,36 @@ body {
 
 .button {
     display: inline-block;
+}
+
+
+/*DROPDOWN*/
+.top-action-list .right li.with-dropdown {
+    position: relative;
+}
+
+/*BOX DROP*/
+.top-action-list .right .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    width: 170px;
+    filter: drop-shadow(0 0 5px rgba(0,0,0, .2));
+    background: #fff;
+    border-radius: 5px;
+}
+
+/*QUADRATINO*/
+.top-action-list .right .dropdown-menu::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    right: 130px;
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    transform: rotate(45deg);
+} 
+
+.top-action-list .right .dropdown-menu .box {
+    list-style: none;
 }
