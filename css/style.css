@@ -6,6 +6,7 @@
 
 body {
     font-family: Roboto, -apple-system, "Helvetica Neue", Helvetica, "Segoe UI", Arial, sans-serif;
+    font-size: 700;
 }
 
 /* UTILITIES */
@@ -16,6 +17,8 @@ body {
     color: #000;
     padding: 0.625em 1.5em;
     text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
 }
 
 .black {
@@ -23,11 +26,15 @@ body {
     color: #fff;
 }
 
+.black:hover {
+    background: rgba(0,0,0,.7);
+}
 
 /* HEADER */
 .app-header {
+    max-width: 1420px;
     margin: 0 auto;
-    padding: 30px;
+    padding: 35px;
 }
 
 .top-action-list{
@@ -37,7 +44,7 @@ body {
     
 }
 
-.logo {
+.left {
     display: flex;
     align-items: center;
 }
@@ -62,12 +69,22 @@ body {
     color: #000;
 }
 
+.left > li:nth-child(2) {
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 .button {
     display: inline-block;
 }
 
 
 /*DROPDOWN*/
+.dropdown-menu {
+    display: none;
+}
+
 .top-action-list .right li.with-dropdown {
     position: relative;
 }
